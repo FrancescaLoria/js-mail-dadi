@@ -6,3 +6,12 @@
 let userRandomNumber = Math.floor(Math.random() * 6) + 1;
 let computerRandomNumber = Math.floor(Math.random() * 6) + 1;
 console.log(userRandomNumber, computerRandomNumber);
+
+// STABILISCO IL VINCITORE IN BASE AL NUMERO PIU' ALTO.
+if (userRandomNumber > computerRandomNumber) {
+  console.log("Hai vinto!");
+} else if (computerRandomNumber > userRandomNumber) {
+  console.log("Ha vinto il PC!");
+} else {
+  console.log("Pareggio!");
+}
